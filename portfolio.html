@@ -1,130 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <title>Connor, Tait and Emmeline Anderson</title>
-      <!-- Css -->
-      <link href="css/bootstrap.css" rel="stylesheet">
-      <link href="css/lightbox.css" rel="stylesheet" type="text/css" media="all" />
-      <link href="css/style.css" rel="stylesheet">
-   </head>
-   <body>
-      <nav class="navbar navbar-default color-fill navbar-fixed-top">
-         <div class="col-md-12">
-            <div class="nav">
-               <button class="btn-nav">
-               <span class="icon-bar top"></span>
-               <span class="icon-bar middle"></span>
-               <span class="icon-bar bottom"></span>
-               </button>
-            </div>
-            <a class="navbar-brand" href="index.html">
-            <img class="logo" src="img/andersoncrest.png" alt="logo">
-            </a>
-            <div class="nav-content hideNav hidden">
-               <ul class="nav-list vcenter">
-                  <li class="nav-item"><a class="item-anchor" href="index.html">Home</a></li>
-                  <li class="nav-item"><a class="item-anchor" href="about.html">About</a></li>
-                  <li class="nav-item"><a class="item-anchor" href="portfolio.html">Gallery</a></li>
-               </ul>
-            </div>
-         </div>
-      </nav>
-      <section id="portfolio">
-         <div class="container">
-            <ul class="portfolio-sorting list-inline text-center">
-               <li><a href="#" data-group="all" class="active">All</a>
-               </li>
-               <li><a href="#" data-group="moment">Connor</a>
-               </li>
-               <li><a href="#" data-group="people">Tait</a>
-               </li>
-               <li><a href="#" data-group="mountain">Emmeline</a>
-               </li>
-            </ul>
-            <div class="row">
-               <div class="col-sm-12">
-                  <div class="lightbox-grid square-thumbs" data-gallery-title="Gallery">
-                     <ul class="portfolio-items list-unstyled" id="grid">
-                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["moment","people"]'>
-                           <a href="img/portfolio1.jpg" data-lightbox="true">
-                              <div class="background-image-holder">
-                                 <img alt="portfolio" class="background-image" src="img/portfolio1.jpg" />
-                              </div>
-                           </a>
-                        </li>
-                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["people"]'>
-                           <a href="img/portfolio2.jpg" data-lightbox="true">
-                              <div class="background-image-holder">
-                                 <img alt="portfolio" class="background-image" src="img/portfolio2.jpg" />
-                              </div>
-                           </a>
-                        </li>
-                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["mountain"]'>
-                           <a href="img/portfolio3.jpg" data-lightbox="true">
-                              <div class="background-image-holder">
-                                 <img alt="portfolio" class="background-image" src="img/portfolio3.jpg" />
-                              </div>
-                           </a>
-                        </li>
-                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["people"]'>
-                           <a href="img/portfolio4.jpg" data-lightbox="true">
-                              <div class="background-image-holder">
-                                 <img alt="portfolio" class="background-image" src="img/portfolio4.jpg" />
-                              </div>
-                           </a>
-                        </li>
-                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["moment"]'>
-                           <a href="img/portfolio5.jpg" data-lightbox="true">
-                              <div class="background-image-holder">
-                                 <img alt="portfolio" class="background-image" src="img/portfolio5.jpg" />
-                              </div>
-                           </a>
-                        </li>
-                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["people"]'>
-                           <a href="img/portfolio6.jpg" data-lightbox="true">
-                              <div class="background-image-holder">
-                                 <img alt="portfolio" class="background-image" src="img/portfolio6.jpg" />
-                              </div>
-                           </a>
-                        </li>
-                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["people"]'>
-                           <a href="img/portfolio7.jpg" data-lightbox="true">
-                              <div class="background-image-holder">
-                                 <img alt="portfolio" class="background-image" src="img/portfolio7.jpg" />
-                              </div>
-                           </a>
-                        </li>
-                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["mountain"]'>
-                           <a href="img/portfolio8.jpg" data-lightbox="true">
-                              <div class="background-image-holder">
-                                 <img alt="portfolio" class="background-image" src="img/portfolio8.jpg" />
-                              </div>
-                           </a>
-                        </li>
-						<li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["mountain"]'>
-                           <a href="img/portfolio9.jpg" data-lightbox="true">
-                              <div class="background-image-holder">
-                                 <img alt="portfolio" class="background-image" src="img/portfolio9.jpg" />
-                              </div>
-                           </a>
-                        </li>
-                     </ul>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Connor, Tait and Emmeline Anderson</title>
+  <!-- Css -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/lightbox.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-default color-fill navbar-fixed-top">
+    <div class="col-md-12">
+      <div class="nav">
+        <button class="btn-nav">
+          <span class="icon-bar top"></span>
+          <span class="icon-bar middle"></span>
+          <span class="icon-bar bottom"></span>
+        </button>
+      </div>
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="img/andersoncrest.png" alt="logo">
+      </a>
+      <div class="nav-content hideNav hidden">
+        <ul class="nav-list vcenter">
+          <li class="nav-item"><a class="item-anchor" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="item-anchor" href="about.html">About</a></li>
+          <li class="nav-item"><a class="item-anchor" href="portfolio.html">Gallery</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="portfolio">
+    <div class="container">
+      <ul class="portfolio-sorting list-inline text-center">
+        <li><a href="#" data-group="all" class="active">All</a>
+        </li>
+        <li><a href="#" data-group="connor">Connor</a>
+        </li>
+        <li><a href="#" data-group="tait">Tait</a>
+        </li>
+        <li><a href="#" data-group="emmeline">Emmeline</a>
+        </li>
+      </ul>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="lightbox-grid square-thumbs" data-gallery-title="Gallery">
+            <ul class="portfolio-items list-unstyled" id="grid">
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["emmeline"]'>
+                <a href="img/emmeline12.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/emmeline12.jpg" />
                   </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- script -->
-      <script src="js/jquery.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/lightbox-plus-jquery.js"></script>
-      <script src="js/jquery.shuffle.min.js"></script>
-      <script src="js/modernizr.js"></script>
-      <script src="js/script.js"></script>
-   </body>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["connor"]'>
+                <a href="img/connor3.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/connor3.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["emmeline"]'>
+                <a href="img/emmeline1.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/emmeline1.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["emmeline"]'>
+                <a href="img/emmeline2.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/emmeline2.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["emmeline"]'>
+                <a href="img/emmeline3.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/emmeline3.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["emmeline"]'>
+                <a href="img/emmeline4.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/emmeline4.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["emmeline"]'>
+                <a href="img/emmeline5.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/emmeline5.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["emmeline"]'>
+                <a href="img/emmeline7.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/emmeline7.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["emmeline"]'>
+                <a href="img/emmeline8.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/emmeline8.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["emmeline"]'>
+                <a href="img/emmeline9.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/emmeline9.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["emmeline"]'>
+                <a href="img/emmeline10.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/emmeline10.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["emmeline"]'>
+                <a href="img/emmeline12.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/emmeline12.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["emmeline"]'>
+                <a href="img/emmeline13.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/emmeline13.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["emmeline"]'>
+                <a href="img/emmeline14.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/emmeline14.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["tait"]'>
+                <a href="img/tait2.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/tait2.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["emmeline"]'>
+                <a href="img/emmeline15.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/emmeline15.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["emmeline"]'>
+                <a href="img/emmeline16.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/emmeline16.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["emmeline"]'>
+                <a href="img/emmeline17.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/emmeline17.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["connor"]'>
+                <a href="img/connor.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/connor.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["connor"]'>
+                <a href="img/connor2.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/connor2.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["connor"]'>
+                <a href="img/connor4.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/connor4.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["connor"]'>
+                <a href="img/connor5.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/connor5.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["connor"]'>
+                <a href="img/connor6.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/connor6.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md4 col-sm12 col-xs-12 no-gutter" data-groups='["connor"]'>
+                <a href="img/connor7.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/connor7.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["tait"]'>
+                <a href="img/tait.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/tait.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["tait", "connor", "emmeline"]'>
+                <a href="img/cte10.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/cte10.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["tait"]'>
+                <a href="img/tait3.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/tait3.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["tait", "connor", "emmeline"]'>
+                <a href="img/cte1.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/cte1.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["tait", "connor", "emmeline"]'>
+                <a href="img/cte2.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/cte2.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["tait", "emmeline"]'>
+                <a href="img/cte3.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/cte3.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["tait"]'>
+                <a href="img/cte4.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/cte4.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["tait", "connor", "emmeline"]'>
+                <a href="img/cte5.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/cte5.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["tait", "connor", "emmeline"]'>
+                <a href="img/cte6.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/cte6.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["tait", "connor", "emmeline"]'>
+                <a href="img/cte7.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/cte7.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["tait", "connor", "emmeline"]'>
+                <a href="img/cte8.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/cte8.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["tait", "connor", "emmeline"]'>
+                <a href="img/cte9.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/cte9.jpg" />
+                  </div>
+                </a>
+              </li>
+              <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["tait", "connor", "emmeline"]'>
+                <a href="img/cte11.jpg" data-lightbox="true">
+                  <div class="background-image-holder">
+                    <img alt="portfolio" class="background-image" src="img/cte11.jpg" />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- script -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/lightbox-plus-jquery.js"></script>
+  <script src="js/jquery.shuffle.min.js"></script>
+  <script src="js/modernizr.js"></script>
+  <script src="js/script.js"></script>
+</body>
 </html>
